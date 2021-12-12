@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container-fluid">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <a class="navbar-brand" href="index.html">
+             <img id="logo" src="CbaMed1.png">
+           </a>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="registro.html">Registro</a>
+               </li>
+               <li class="nav-item">
+                  <a  class="nav-link" href="Acerca de nosotros.html">Acerca de Nosotros</a>
+               </li>
+               <li class="nav-item">
+                 <a  class="nav-link" href="mostrarDatos.html">Acerca de Nosotros</a>
+              </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+     <!-- fin de la barra de navegacion -->
+     </header>
+     <div class="container">
+       <div class="login-container">
+         <form id="formulario">
+          <h2>Registrarse</h2>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+            <input id="userR" class="form-control" type="text" placeholder="Nombre y Apellido" class="NomApellido" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email </label>
+            <input class="form-control" type="email" placeholder="Correo" id="correoR" class="correo" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fecha de Nacimiento</label>
+            <input class="form-control" type="text" placeholder="fecha de nacimiento" id="fechaNacimientoR" class="Fecha de nacimiento" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nacionalidad</label>
+            <input class="form-control" type="text" placeholder="País" id="Nacionalidad" class="País" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Provincia </label>
+            <input class="form-control" type="text" placeholder="Provincia" id="ProvinciaR" class="Provincia" disabled>
+          </div>
+         
+         
+        </form>
+        
+        <head>
+          <script>
+          alert('Te estaremos redireccionando en 5 segundos');
+          function redireccionar(){window.location="index.html";}
+          setTimeout ("redireccionar()", 5000);
+          </script>
+          </head>
+          
+    <script src="app.js"></script>
+</body>
+</html>
