@@ -64,9 +64,10 @@
         <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
         <input id="user" name="nombre" class="form-control" type="text" placeholder="Nombre y Apellido" class="NomApellido" minlength="2" required>
       </div>
-      <div class="mb-3" id="emailOK">
-        <label for="exampleInputEmail1" class="form-label">Email </label>
-        <input class="form-control" name="correo" type="email" placeholder="ejemplo@outlook.com" id="correo" class="correo"  minlength="5" required> 
+
+      <div class="mb-3" >
+        <label for="exampleInputEmail1" class="form-label" >Email </label>
+        <input class="form-control" name="correo" type="email" placeholder="ejemplo@outlook.com" id="correo" class="correo" minlength="5" required> 
       </div>
 
       <!-- Campo fecha -->
@@ -99,7 +100,9 @@
       <!--  boton enviar -->
       <div class="form-group" id="form-group-button">
 
-        <button id="enviar" type="submit" class="btn btn-primary" onmouseover="cambiarBoton()" onmouseout="cambiarBoton2();" >Enviar</button>
+        <button id="enviar" type="submit" class="btn btn-primary" onclick="validarCorreo(document.getElementById('correo').value)" onmouseover="cambiarBoton()" onmouseout="cambiarBoton2();" >Enviar</button>
+
+       
       </div> 
     </form>
 
